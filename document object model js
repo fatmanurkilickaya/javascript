@@ -1,0 +1,36 @@
+// document.getElementById("bio").innerHTML 
+// = "Fatma Nur Kılıçkaya"
+
+// var intro1 = document.getElementById("intro1");
+// var mesaj = document.getElementById("mesaj");
+
+// mesaj.innerHTML = intro1.innerHTML;
+
+// var tumListe = document.getElementsByTagName("ul");
+// var liste = tumListe[1];
+// var sehirler =liste.getElementsByTagName("li");
+// for(var i=0; i<sehirler.length; i++){
+//     alert(sehirler[i].innerHTML);
+// }
+
+// var classDoc = document.getElementsByClassName("intro2");
+// alert(classDoc[0].innerHTML);
+
+// var queryElement = document.querySelectorAll("p#intro3");
+// alert(queryElement[0].innerHTML);
+
+var name = document.getElementById("bilgisayar")
+.addEventListener("mouseover", renkdegistir);
+
+function renkdegistir(){
+    document.getElementById("p2")
+    .style.background = "purple"
+}
+
+var isim = document.getElementById("ogrenciAdi")
+.addEventListener("click", isimDegistir);
+
+function isimDegistir(){
+    var isimElemanlari = document.getElementsByName("ogrenciAdi");
+    isimElemanlari[0].value="Fatma Nur Kılıçkaya"
+}
